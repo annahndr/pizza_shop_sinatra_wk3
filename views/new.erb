@@ -1,0 +1,30 @@
+<h3>Welcome to the Pizza Shop!</h3>
+<p>Please create your order below:</p>
+<br>
+<br>
+<form method="post" action="/pizza_orders">
+
+  <label for= "first-name">First name:</label>
+  <input id="first-name" type="text" name ="first_name"/>
+
+  <label for="last-name">Last name:</label>
+  <input id= "last-name" type="text" name="last_name"/>
+
+  <label for="pizza-select">Select a pizza:</label>
+  <select id="pizza-select" name="topping">
+      <option value="Margherita">Margherita</option>
+      <option value="Calzone">Calzone</option>
+      <option value="Pepperoni">Pepperoni</option>
+
+  </select>
+  <label for="quantity">Quantity:</label>
+  <input id="quantity" type="number" name="quantity"/>
+
+  <input type="submit" value="Order Pizza"/>
+
+</form>
+<br>
+<br>
+
+<!--the 'name' properties should match the keys in the hash, so name= must match
+'for' should refer to the id of the label we are referring to. they should match  -->
